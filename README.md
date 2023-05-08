@@ -5,7 +5,7 @@ Día 1 (04/05/2023):
  - Creamos canal de comunicación.
  - Empezamos a definir el tablero kanban.
 
- Día 2 (05/05/2023):
+Día 2 (05/05/2023):
 
  - Terminamos el kanban.
  - Empezamos el EDA: 
@@ -17,6 +17,15 @@ Día 1 (04/05/2023):
     - Comprobamos nulos y duplicados.
  - Decidimos crear archivo src.
 
- Para día 3:
- - Continuar EDA (terminar categorización de 'season').
+Día 3 (08/05/2023):
+
+   - Terminamos la categorización 
+   - Realizamos un heatmap y en base a lo observado, eliminamos la columna de la sensación térmica, puesto que es prácticamente idéntica a la de temperatura.
+   - Exploramos los outliers de la columna 'casual', la de los clientes no registrados.
+
+
+ Para día 4:
+ - Continuar EDA.
+ - Seguir estudiando el heatmap.
+ - Valorar si separar el dataset. Calcular el porcentaje de cnt que representan 'casual' y 'registered' para cada día. 
  - Empezar a incluir en el archivo src las variables/funciones que vayamos creando.
