@@ -24,21 +24,22 @@ Día 3 (08/05/2023):
    - Exploramos los outliers de la columna 'casual', la de los clientes no registrados.
 
 
- <!-- Para día 4:
- - Continuar EDA.
- - Seguir estudiando el heatmap.
- - Valorar si separar el dataset. Calcular el porcentaje de cnt que representan 'casual' y 'registered' para cada día. 
- - Empezar a incluir en el archivo src las variables/funciones que vayamos creando. -->
-
-Día 4 (08/05/2023)
+Día 4 (09/05/2023):
   - Continuamos explorando el dataframe:
       - Analizamos el heatmap
       - Hacemos un pairplot y un qqplot
    - Decidimos mantener el dataset completo por el momento, sin separarlo por clientes casuales vs. registrados.
    - Con el test de saphiro confirmamos que nuestra variable dependiente ('cnt'), no sigue una distribución normal, al igual que 'casual' y 'registered'.
 
-Para día 5:
-   - Normalizar la variable dependiente
+Día 5 (10/05/2023):
+
+ - Hacemos pairplots comparando los clientes generales, registrados y casuales con las diferentes variables categóricas.
+ - Seguimos comparando los datos y empezamos a ver diferente comportamiento entre los clientes registrados y los casuales.
+ - Decidimos que probablemente haya que realizar un modelo predictivo diferente para cada segmento de clientes.
+
+Para día 6:
+   
+   - Normalizar las potenciales variables dependientes ("casual", "registered" y "cnt")
    - Comprobar que se cumplen las asunciones para una regresión lineal:
       - Homocedasticidad
       - Independiencia
