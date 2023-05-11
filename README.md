@@ -37,10 +37,15 @@ Día 5 (10/05/2023):
  - Seguimos comparando los datos y empezamos a ver diferente comportamiento entre los clientes registrados y los casuales.
  - Decidimos que probablemente haya que realizar un modelo predictivo diferente para cada segmento de clientes.
 
-Para día 6:
-   
-   - Normalizar las potenciales variables dependientes ("casual", "registered" y "cnt")
-   - Comprobar que se cumplen las asunciones para una regresión lineal:
-      - Homocedasticidad
-      - Independiencia
-   - Realizar ANOVA
+Día 6 (11/05/2023):
+   - Convertimos nuestras variables categóricas a formato 'category'
+   - Eliminamos columnas sobrantes
+   - Guardamos los datos limpios en un .csv
+   - Comprobamos si nustras variables dependientes cumplen con la asución de normalidad.
+         - Nuestras variables no cumplen asunción de normalidad
+         - Tratamos de normalizar la variable 'registered', no siendo posible - Concluimos que no podemos hacer una regresión lineal para
+         ninguna de nuestras posibles variables dependientes.
+
+Para día 7:
+   - Estandarizar variables predictivas numércias
+   - Hacer encoding de las variables categoricas
