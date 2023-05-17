@@ -54,8 +54,17 @@ Día 7 (12/05/2023):
  - Intentamos empezar el encoding pero no conseguimos avanzar mucho porque los datos de pronto no tienen sentido.  
 
 
-Para día 8:
-   - Hacer sprint review. 
-   - Intentar que los datos vuelvan a tener sentido.
-   - Hacer encoding de las variables categoricas.
-   - VISTO LO VISTO, HAY QUE INVESTIGAR PORQUE TODO ES MENTIRA.
+Día 8 (16/05/2023):
+
+ - Sprint review.
+ - Sprint planning.
+
+Día 9 (17/05/2023):
+
+ - Hemos terminado de explorar los datos.
+ - Decidimos separar ya los tres dataframes: uno para clientes casuales, uno para registrados, y uno general.
+ - Hemos consultado a Ana y hemos observado las diferencias entre nuestras variables categóricas de cara a realizar el encoding.
+
+Para Día 10 (18/05/2023):
+
+ - Realizar el encoding de los dos (¿tres?) dataframes que tenemos, usando el OrdinalEncoder con el parámetro Auto.  
