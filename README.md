@@ -67,4 +67,11 @@ Día 9 (17/05/2023):
 
 Para Día 10 (18/05/2023):
 
- - Realizar el encoding de los dos (¿tres?) dataframes que tenemos, usando el OrdinalEncoder con el parámetro Auto.  
+ - Borramos columnas redundantes
+ - Separamos el dataframe completo en tres: casual, registered, cnt.
+ - Comenzamos el encoding de las variables categoricas del dataframe 'casual'
+
+Para Día 11 (19/05/2023):
+ 
+ - Continuamos el encoding para los tres dataframes
+ - Realizamos los primeros modelos de Decision Tree y Random Forest
