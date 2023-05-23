@@ -65,13 +65,19 @@ Día 9 (17/05/2023):
  - Decidimos separar ya los tres dataframes: uno para clientes casuales, uno para registrados, y uno general.
  - Hemos consultado a Ana y hemos observado las diferencias entre nuestras variables categóricas de cara a realizar el encoding.
 
-Para Día 10 (18/05/2023):
+Día 10 (18/05/2023):
 
  - Borramos columnas redundantes
  - Separamos el dataframe completo en tres: casual, registered, cnt.
  - Comenzamos el encoding de las variables categoricas del dataframe 'casual'
 
-Para Día 11 (19/05/2023):
+Día 11 (19/05/2023):
  
- - Continuamos el encoding para los tres dataframes
- - Realizamos los primeros modelos de Decision Tree y Random Forest
+ - Generamos código para calcular el peso de las variables.
+ - Continuamos el encoding de las variables en el dataframe de casual.
+
+
+Para Día 12 (22/05/2023):
+ 
+ - Continuar el encoding para los tres dataframes
+ - Realizar los primeros modelos de Decision Tree y Random Forest
