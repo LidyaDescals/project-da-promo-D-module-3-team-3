@@ -71,7 +71,7 @@ def main():
     weekday = st.slider("Día de la semana", 0, 6)
     workingday = st.selectbox("Día laborable", [0, 1])
     holiday = st.selectbox("Día festivo", [0, 1])
-    weathersit = st.select_slider("Clima", ("Cielo despejado o parcialmente nublado", "Niebla, cielo muy nublado", "Lluvia o nieve ligeras")
+    weathersit = st.select_slider("Clima", ("Cielo despejado o parcialmente nublado", "Niebla, cielo muy nublado", "Lluvia o nieve ligeras"))
     temp = st.slider("Temperatura", 0, 35)
     hum = st.slider("Humedad", 0, 100)
     windspeed = st.slider("Velocidad del viento", 0 , 35)
