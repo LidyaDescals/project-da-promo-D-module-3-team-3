@@ -70,27 +70,27 @@ def main():
     if mes == "Enero":
 	    month = 0
     if mes == "Febrero":
-	month = 1
+	    month = 1
     if mes == "Marzo":
-	month = 2
+	    month = 2
     if mes == "Abril":
-	month = 3
+	    month = 3
     if mes == "Mayo":
-	month = 4
+	    month = 4
     if mes == "Junio":
-	month = 5
+	    month = 5
     if mes == "Julio":
-	month = 6
+	    month = 6
     if mes == "Agosto":
-	month = 7
+	    month = 7
     if mes == "Septiembre":
-	month = 8
+	    month = 8
     if mes == "Octubre":
-	month = 9
+	    month = 9
     if mes == "Noviembre":
-	month = 10
+	    month = 10
     if mes == "Diciembre":
-	month = 11
+	    month = 11
    
     year = st.slider("Año", 2018, 2025)
     weekday = st.slider("Día de la semana", 0, 6)
