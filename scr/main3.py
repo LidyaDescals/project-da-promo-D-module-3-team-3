@@ -68,7 +68,7 @@ def main():
     mes = st.select_slider('Mes', ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"))
 
     if mes == "Enero":
-		month = 0
+	    month = 0
     if mes == "Febrero":
 	month = 1
     if mes == "Marzo":
