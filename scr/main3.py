@@ -93,7 +93,24 @@ def main():
 	    month = 11
    
     year = st.slider("Año", 2018, 2025)
-    weekday = st.slider("Día de la semana", 0, 6)
+    dia = st.select_slider("Día de la semana", ("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"))
+
+
+    if dia == "Lunes":
+	    weekday = 0
+    if dia == "Martes":
+	    weekday = 1
+    if dia == "Miércoles":
+	    weekday = 2
+    if dia == "Jueves":
+	    weekday = 3
+    if dia == "Viernes":
+	    weekday = 4
+    if dia == "Sábado":
+	    weekday = 5
+    if dia == "Domingo":
+	    weekday = 6
+
     workingday = st.selectbox("Día laborable", [0, 1])
     holiday = st.selectbox("Día festivo", [0, 1])
     weathersit = st.slider("Clima", 1, 3)
