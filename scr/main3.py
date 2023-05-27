@@ -60,8 +60,9 @@ def prediccion(month, year, weekday, workingday, holiday, weathersit, temp, hum,
     return cnt
 
 def main():
-    st.title("Predicción de alquiler de bicicletas")
     st.image('scr/bici.png')
+    st.title("Predicción de alquiler de bicicletas")
+
 
     # meses = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     # dias_semana = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
