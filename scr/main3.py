@@ -66,7 +66,7 @@ def main():
     # dias_semana = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 
-    month = st.slider('Mes', 0, 11)
+    month = st.select_slider('Mes', ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"))
     year = st.slider("Año", 2018, 2025)
     weekday = st.slider("Día de la semana", 0, 6)
     workingday = st.selectbox("Día laborable", [0, 1])
