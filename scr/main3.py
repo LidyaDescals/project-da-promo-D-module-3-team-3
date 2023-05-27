@@ -66,15 +66,17 @@ def main():
     # dias_semana = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 
-    month = st.select_slider('Mes', ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"))
+    month = st.slider('Mes', 0, 11)
     year = st.slider("Año", 2018, 2025)
-    weekday = st.select_slider("Día de la semana", ("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"))
-    workingday = st.selectbox("Día laborable", ("No", "Sí"))
-    holiday = st.selectbox("Día festivo", ("No", "Sí"))
-    weathersit = st.select_slider("Clima", ("Cielo despejado o parcialmente nublado", "Niebla, cielo muy nublado", "Lluvia o nieve ligeras"))
+    weekday = st.slider("Día de la semana", 0, 6)
+    workingday = st.selectbox("Día laborable", [0, 1])
+    holiday = st.selectbox("Día festivo", [0, 1])
+    weathersit = st.slider("Clima", 1, 3)
     temp = st.slider("Temperatura", 0, 35)
-    hum = st.slider("Porcentaje de humedad", 0, 100)
+    hum = st.slider("Humedad", 0, 100)
     windspeed = st.slider("Velocidad del viento", 0 , 35)
+    
+
 
     if st.button("Predecir"):
         prediction = prediccion(month, year, weekday, workingday, holiday, weathersit, temp, hum, windspeed)
