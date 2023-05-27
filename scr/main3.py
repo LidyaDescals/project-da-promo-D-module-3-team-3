@@ -19,14 +19,15 @@ from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from sklearn.model_selection import GridSearchCV
 import streamlit as st
 import pickle
+import os
 pd.options.display.max_columns = None
 
 
 def prediccion(month, year, weekday, workingday, holiday, weathersit, temp, hum, windspeed):
-    with open("estandarizacion.pkl", "rb") as estandarizacion:
+    with open("/estandarizacion.pkl", "rb") as estandarizacion:
         scaler = pickle.load(estandarizacion)
 
-    with open("mejor_modelo.pkl", "rb") as modelo:
+    with open("/mejor_modelo.pkl", "rb") as modelo:
         bosque = pickle.load(modelo)
 
     df_pred = pd.DataFrame({"month": [month], "year": [year], "weekday": [weekday], "workingday": [workingday], "holiday": [holiday], "weathersit": [weathersit], "temp": [temp], "hum": [hum], "windspeed": [windspeed]})
