@@ -73,7 +73,7 @@ def main():
     holiday = st.selectbox("Día festivo", ("No", "Sí"))
     weathersit = st.select_slider("Clima", ("Cielo despejado o parcialmente nublado", "Niebla, cielo muy nublado", "Lluvia o nieve ligeras"))
     temp = st.slider("Temperatura", 0, 35)
-    hum = st.slider("Humedad", 0, 100)
+    hum = st.slider("Porcentaje de humedad", 0, 100)
     windspeed = st.slider("Velocidad del viento", 0 , 35)
 
     if st.button("Predecir"):
