@@ -97,7 +97,8 @@ def main():
     workingday = st.selectbox("Día laborable", [0, 1])
     holiday = st.selectbox("Día festivo", [0, 1])
     weathersit = st.slider("Clima", 1, 3)
-    temp = st.slider("Temperatura", 0, 35)
+    
+	temp = st.slider("Temperatura", 0, 35)
     hum = st.slider("Humedad", 0, 100)
     windspeed = st.slider("Velocidad del viento", 0 , 35)
     
