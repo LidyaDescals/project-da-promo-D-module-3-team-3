@@ -4,18 +4,6 @@ import numpy as np
 import pandas as pd
 
 
-# Gráficos
-# ------------------------------------------------------------------------------
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-
-#  Gestión de warnings
-# ------------------------------------------------------------------------------
-import warnings
-warnings.filterwarnings("ignore")
-
-
 # Codificación variables categóricas
 # ------------------------------------------------------------------------------
 from sklearn.preprocessing import OneHotEncoder
