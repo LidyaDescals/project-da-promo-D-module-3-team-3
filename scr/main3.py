@@ -109,14 +109,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    	temp = st.slider("Temperatura", 0, 35)
-    	hum = st.slider("Humedad", 0, 100)
-    	windspeed = st.slider("Velocidad del viento", 0 , 35)
-
-
-    	if st.button("Predecir"):
-        	prediction = prediccion(month, year, weekday, workingday, holiday, weathersit, temp, hum, windspeed)
-        	st.success(f"La cantidad de bicicletas alquiladas estimada es: {int(prediction)}")
-
-if __name__ == '__main__':
-    	main()
