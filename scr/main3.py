@@ -111,12 +111,33 @@ def main():
     if dia == "Domingo":
 	    weekday = 6
 
-    workingday = st.selectbox("Día laborable", [0, 1])
-    holiday = st.selectbox("Día festivo", [0, 1])
-    weathersit = st.slider("Clima", 1, 3)
-    temp = st.slider("Temperatura", 0, 35)
-    hum = st.slider("Humedad", 0, 100)
-    windspeed = st.slider("Velocidad del viento", 0 , 35)
+    laborable = st.selectbox("Día laborable", ("No", "Sí"))
+
+    if laborable == "No":
+	    workingday = 0
+    if laborable == "Sí":
+	    workingday = 1
+
+	
+    festivo = st.selectbox("Día festivo", ("No", "Sí"))
+
+    if festivo == "No":
+	    holiday = 0
+    if festivo == "Sí":
+	    holiday = 1
+
+    tiempo = st.select_slider("Clima", ("Cielo despejado o parcialmente nublado", "Niebla, cielo muy nublado", "Lluvia o nieve ligeras"))
+
+    if tiempo == "Cielo despejado o parcialmente nublado":
+	    weathersit = 1
+    if tiempo == "Niebla, cielo muy nublado":
+	    weathersit = 2
+    if tiempo == "Lluvia o nieve ligeras":
+	    weathersit = 3
+		
+    temp = st.slider("Temperatura en grados Celsius", 0, 35)
+    hum = st.slider("Porcentaje de humedad", 0, 100)
+    windspeed = st.slider("Velocidad del viento en km/h", 0 , 35)
     
 
 
