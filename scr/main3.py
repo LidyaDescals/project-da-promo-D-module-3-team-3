@@ -67,30 +67,30 @@ def main():
 
     mes = st.select_slider('Mes', ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"))
 
-	if mes == "Enero":
-		month = 0
-	if mes == "Febrero":
-		month = 1
-	if mes == "Marzo":
-		month = 2
-	if mes == "Abril":
-		month = 3
-	if mes == "Mayo":
-		month = 4
-	if mes == "Junio":
-		month = 5
-	if mes == "Julio":
-		month = 6
-	if mes == "Agosto":
-		month = 7
-	if mes == "Septiembre":
-		month = 8
-	if mes == "Octubre":
-		month = 9
-	if mes == "Noviembre":
-		month = 10
-	if mes == "Diciembre":
-		month = 11
+    if mes == "Enero":
+	month = 0
+    if mes == "Febrero":
+	month = 1
+    if mes == "Marzo":
+	month = 2
+    if mes == "Abril":
+	month = 3
+    if mes == "Mayo":
+	month = 4
+    if mes == "Junio":
+	month = 5
+    if mes == "Julio":
+	month = 6
+    if mes == "Agosto":
+	month = 7
+    if mes == "Septiembre":
+	month = 8
+    if mes == "Octubre":
+	month = 9
+    if mes == "Noviembre":
+	month = 10
+    if mes == "Diciembre":
+	month = 11
    
     year = st.slider("Año", 2018, 2025)
     weekday = st.slider("Día de la semana", 0, 6)
