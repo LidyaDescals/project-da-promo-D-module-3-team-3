@@ -60,6 +60,7 @@ def prediccion(month, year, weekday, workingday, holiday, weathersit, temp, hum,
     return cnt
 
 def main():
+    st.image('scr/datalicious.png')
     st.image('scr/bici.png')
     st.title("Predicción de alquiler de bicicletas")
 
@@ -147,26 +148,8 @@ def main():
         prediction = prediccion(month, year, weekday, workingday, holiday, weathersit, temp, hum, windspeed)
         st.success(f"La cantidad de bicicletas alquiladas estimada es: {int(prediction)}")
 	
-def center_image(image_path):
-    st.markdown(
-        f"""
-        <style>
-        .center {{
-            display: flex;
-            justify-content: center;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-    st.markdown(
-        f'<div class="center"><img src="{image_path}"></div>',
-        unsafe_allow_html=True
-    )
-
 
 if __name__ == '__main__':
     main()
 
-center_image('datalicious.png')
+
