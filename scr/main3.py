@@ -64,11 +64,7 @@ def main():
     st.image('scr/bici2.png')
     st.title("Predicción de alquiler de bicicletas")
 
-
-    # meses = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-    # dias_semana = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-
-    mes = st.select_slider('Mes', ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"))
+    mes = st.selectbox('Mes', ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"))
 
     if mes == "Enero":
 	    month = 0
@@ -96,7 +92,7 @@ def main():
 	    month = 11
    
     year = st.slider("Año", 2018, 2025)
-    dia = st.select_slider("Día de la semana", ("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"))
+    dia = st.selectbox("Día de la semana", ("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"))
 
 
     if dia == "Lunes":
@@ -129,7 +125,7 @@ def main():
     if festivo == "Sí":
 	    holiday = 1
 
-    tiempo = st.select_slider("Clima", ("Cielo despejado o parcialmente nublado", "Niebla, cielo muy nublado", "Lluvia o nieve ligeras"))
+    tiempo = st.selectbox("Clima", ("Cielo despejado o parcialmente nublado", "Niebla, cielo muy nublado", "Lluvia o nieve ligeras"))
 
     if tiempo == "Cielo despejado o parcialmente nublado":
 	    weathersit = 1
