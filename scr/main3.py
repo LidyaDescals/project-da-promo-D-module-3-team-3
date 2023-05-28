@@ -164,7 +164,9 @@ def center_image(image_path):
         f'<div class="center"><img src="{image_path}"></div>',
         unsafe_allow_html=True
     )
-center_image('scr/The Data-licious (5).png')
+
 
 if __name__ == '__main__':
     main()
+
+center_image('scr/The Data-licious (5).png')
