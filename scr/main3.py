@@ -60,7 +60,7 @@ def prediccion(month, year, weekday, workingday, holiday, weathersit, temp, hum,
     return cnt
 
 def main():
-    st.image('scr/datalicious.png')
+    st.image('scr/datalicious2.png')
     st.image('scr/bici.png')
     st.title("Predicción de alquiler de bicicletas")
 
