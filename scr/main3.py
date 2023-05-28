@@ -110,7 +110,7 @@ def main():
     if dia == "Domingo":
 	    weekday = 6
 
-    laborable = st.selectbox("Día laborable", ("No", "Sí"))
+    laborable = st.radio("Día laborable", ("No", "Sí"))
 
     if laborable == "No":
 	    workingday = 0
@@ -118,7 +118,7 @@ def main():
 	    workingday = 1
 
 	
-    festivo = st.selectbox("Día festivo", ("No", "Sí"))
+    festivo = st.radio("Día festivo", ("No", "Sí"))
 
     if festivo == "No":
 	    holiday = 0
