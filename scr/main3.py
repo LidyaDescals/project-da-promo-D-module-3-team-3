@@ -147,9 +147,24 @@ def main():
         prediction = prediccion(month, year, weekday, workingday, holiday, weathersit, temp, hum, windspeed)
         st.success(f"La cantidad de bicicletas alquiladas estimada es: {int(prediction)}")
 	
-    left_co, cent_co,last_co = st.columns(3)
-    with cent_co:
-        st.image('scr/The Data-licious (5).png')
+def center_image(image_path):
+    st.markdown(
+        f"""
+        <style>
+        .center {{
+            display: flex;
+            justify-content: center;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        f'<div class="center"><img src="{image_path}"></div>',
+        unsafe_allow_html=True
+    )
+center_image('scr/The Data-licious (5).png')
 
 if __name__ == '__main__':
     main()
