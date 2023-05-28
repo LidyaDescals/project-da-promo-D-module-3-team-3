@@ -169,4 +169,4 @@ def center_image(image_path):
 if __name__ == '__main__':
     main()
 
-center_image('scr/The Data-licious (5).png')
+center_image('scr/datalicious.png')
