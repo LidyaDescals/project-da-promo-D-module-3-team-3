@@ -142,8 +142,8 @@ def main():
     m = st.markdown("""
     <style>
     div.stButton > button:first-child {
-    background-color: #E5998A;
-    color:#62C4B0;
+    background-color: #62C4B0;
+    color:#E5998A;
     }
     </style>""", unsafe_allow_html=True)
 
