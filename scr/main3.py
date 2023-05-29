@@ -143,7 +143,7 @@ def main():
     <style>
     div.stButton > button:first-child {
     background-color: #62C4B0;
-    color:#E5998A;
+    color:#292929;
     }
     </style>""", unsafe_allow_html=True)
 
