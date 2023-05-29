@@ -139,8 +139,18 @@ def main():
     windspeed = st.slider("Velocidad del viento en km/h", 0 , 35)
     
 
+    m = st.markdown("""
+    <style>
+    div.stButton > button:first-child {
+    background-color: #E5998A;
+    color:#62C4B0;
+    }
+    </style>""", unsafe_allow_html=True)
 
-    if st.button("Predecir"):
+    b = st.button("Predecir")
+	
+
+    if b:
         prediction = prediccion(month, year, weekday, workingday, holiday, weathersit, temp, hum, windspeed)
         st.success(f"La cantidad de bicicletas alquiladas estimada es: {int(prediction)}")
 	
